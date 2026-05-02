@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Bikes — Mecânica Especializada</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="IMG/cropped_image.png">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="logo">
+      Doctor <span>Bikes</span>
+    </div>
+    <ul id="navMenu">
+      <li><a href="#inicio" onclick="closeMenu()">Início</a></li>
+      <li><a href="#sobre" onclick="closeMenu()">Sobre</a></li>
+      <li><a href="#servicos" onclick="closeMenu()">Serviços</a></li>
+      <li><a href="#processo" onclick="closeMenu()">Processo</a></li>
+      <li><a href="#loja" onclick="closeMenu()">Loja</a></li>
+      <li><a href="https://wa.me/5511976527640" class="nav-cta" onclick="closeMenu()">📱 WhatsApp</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-left">
+      <div class="hero-badge">● Mecânico especializado em bikes</div>
+      <h1>Sua bike<br>merece o<br><em>melhor cuidado</em></h1>
+      <p>Nacionais e importadas. Diagnóstico preciso, peças de qualidade e mão de obra especializada em Jundiaí–SP. Mais
+        de 4 anos de experiência no mercado.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/5511976527640" class="btn-primary">📱 Agendar revisão</a>
+        <a href="#servicos" class="btn-outline">Ver serviços →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-num">793+</div>
+          <div class="hstat-label">Posts publicados</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-num">1.3k</div>
+          <div class="hstat-label">Seguidores</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-num">4+</div>
+          <div class="hstat-label">Anos de experiência</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-num">500+</div>
+          <div class="hstat-label">Bikes atendidas</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="wheel-wrap">
+        <div class="wheel-outer" id="wheelOuter"></div>
+        <div class="wheel-inner"></div>
+        <div class="wheel-center">BIKES</div>
+        <div class="float-badge fb1">
+          <strong>⭐ 5.0</strong>
+          <span>Google Reviews</span>
+        </div>
+        <div class="float-badge fb2">
+          <strong>48h</strong>
+          <span>Prazo médio de entrega</span>
+        </div>
+        <div class="float-badge fb3">
+          <strong>🔒</strong>
+          <span>Garantia no serviço</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="marquee">
+      <span class="marquee-item">REVISÃO COMPLETA <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">TROCA DE ROLAMENTOS <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SUSPENSÃO <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">RODAS TUBELESS <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SHIMANO <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SRAM <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">TREK <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SPECIALIZED <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SCOTT <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">GIANT <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">REVISÃO COMPLETA <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">TROCA DE ROLAMENTOS <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SUSPENSÃO <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">RODAS TUBELESS <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SHIMANO <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SRAM <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">TREK <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SPECIALIZED <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">SCOTT <span class="marquee-dot">◆</span></span>
+      <span class="marquee-item">GIANT <span class="marquee-dot">◆</span></span>
+    </div>
+  </div>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="sobre-grid">
+      <div class="sobre-img-wrap fade">
+        <div class="sobre-img-placeholder">
+          <h2>Imagem</h2>
+        </div>
+        <div class="sobre-tag">Daniel Camargo — Fundador</div>
+      </div>
+      <div class="sobre-text fade fade-d2">
+        <div class="section-label">Quem somos</div>
+        <h2>Paixão por bikes,<br>precisão no serviço</h2>
+        <p>A Doctor Bikes nasceu da paixão do Daniel Camargo pelo ciclismo. Com mais de 4 anos no mercado, construímos
+          uma reputação sólida em Jundiaí–SP atendendo bikes nacionais e importadas das melhores marcas do mundo.</p>
+        <p>Trabalhamos com diagnóstico detalhado antes de qualquer orçamento, porque acreditamos que transparência é
+          tudo na relação com o cliente.</p>
+        <div class="sobre-checks">
+          <div class="check-item">
+            <div class="check-icon">✓</div> Diagnóstico gratuito antes do orçamento
+          </div>
+          <div class="check-item">
+            <div class="check-icon">✓</div> Peças originais e de qualidade
+          </div>
+          <div class="check-item">
+            <div class="check-icon">✓</div> Garantia em todos os serviços
+          </div>
+          <div class="check-item">
+            <div class="check-icon">✓</div> Atendimento via WhatsApp em tempo real
+          </div>
+        </div>
+        <div class="section-label">Marcas atendidas</div>
+        <div class="brand-strip">
+          <div class="brand-chip">Trek</div>
+          <div class="brand-chip">Specialized</div>
+          <div class="brand-chip">Scott</div>
+          <div class="brand-chip">Giant</div>
+          <div class="brand-chip">Cannondale</div>
+          <div class="brand-chip">Shimano</div>
+          <div class="brand-chip">SRAM</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="servicos-header">
+      <div>
+        <div class="section-label">O que fazemos</div>
+        <h2>Nossos serviços</h2>
+      </div>
+      <a href="https://wa.me/5511976527640" class="btn-outline">Solicitar orçamento →</a>
+    </div>
+    <div class="servicos-grid">
+      <div class="card card-featured fade">
+        <div class="card-icon">🔧</div>
+        <div>
+          <h3>Revisão Completa</h3>
+          <p>Checagem de todos os componentes da sua bike com diagnóstico detalhado. Ajuste de freios, câmbios,
+            pedivela, mesa, selim e muito mais. Saída garantida.</p>
+          <div class="card-price">A partir de R$ 120,00</div>
+        </div>
+      </div>
+      <div class="card fade fade-d1">
+        <div class="card-icon">⚙️</div>
+        <h3>Rolamentos</h3>
+        <p>Troca de rolamentos cerâmicos e convencionais para bikes nacionais e importadas.</p>
+        <div class="card-price">Consultar</div>
+      </div>
+      <div class="card fade fade-d2">
+        <div class="card-icon">🏔️</div>
+        <h3>Suspensão</h3>
+        <p>Manutenção e regulagem de garfos e amortecedores ProShock e similares.</p>
+        <div class="card-price">A partir de R$ 80,00</div>
+      </div>
+      <div class="card fade fade-d1">
+        <div class="card-icon">🛞</div>
+        <h3>Rodas Tubeless</h3>
+        <p>Conversão e manutenção de rodas tubeless para melhor performance no trail.</p>
+        <div class="card-price">A partir de R$ 60,00</div>
+      </div>
+      <div class="card fade fade-d2">
+        <div class="card-icon">🔗</div>
+        <h3>Transmissão</h3>
+        <p>Substituição de correntes, cassetes, coroas e ajuste fino do sistema de câmbio.</p>
+        <div class="card-price">A partir de R$ 50,00</div>
+      </div>
+      <div class="card fade fade-d3">
+        <div class="card-icon">⚡</div>
+        <h3>E-Bikes</h3>
+        <p>Manutenção especializada em bikes elétricas: motor, bateria e sistema eletrônico.</p>
+        <div class="card-price">Consultar</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="processo" id="processo">
+    <div class="section-label">Como funciona</div>
+    <h2>Do contato à entrega</h2>
+    <div class="steps">
+      <div class="step fade">
+        <div class="step-num">01</div>
+        <div class="step-text"><h4>Contato</h4>
+        <p>Fale conosco pelo WhatsApp e descreva o problema da sua bike.</p></div>
+      </div>
+      <div class="step fade fade-d1">
+        <div class="step-num">02</div>
+        <div class="step-text"><h4>Diagnóstico</h4>
+        <p>Fazemos uma análise completa e gratuita antes de qualquer orçamento.</p></div>
+      </div>
+      <div class="step fade fade-d2">
+        <div class="step-num">03</div>
+        <div class="step-text"><h4>Orçamento</h4>
+        <p>Enviamos um orçamento detalhado com prazo e valor total sem surpresas.</p></div>
+      </div>
+      <div class="step fade fade-d3">
+        <div class="step-num">04</div>
+        <div class="step-text"><h4>Execução</h4>
+        <p>Serviço realizado com peças de qualidade e técnica especializada.</p></div>
+      </div>
+      <div class="step fade fade-d4">
+        <div class="step-num">05</div>
+        <div class="step-text"><h4>Entrega</h4>
+        <p>Bike pronta, testada e com garantia. Você pedala seguro.</p></div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos">
+    <div class="section-label">O que dizem</div>
+    <h2>Clientes satisfeitos</h2>
+    <div class="depo-grid">
+      <div class="depo fade">
+        <div class="depo-stars">★★★★★</div>
+        <q>Daniel fez um ótimo trabalho na minha bike, revisão e algumas melhorias, sem falar que
+          Muito gente boa !</q>
+        <div class="depo-author">
+          <div class="depo-avatar">👨</div>
+          <div>
+            <div class="depo-name">Rafael Souza</div>
+            <div class="depo-sub">Cliente desde 2022</div>
+          </div>
+        </div>
+      </div>
+      <div class="depo fade fade-d1">
+        <div class="depo-stars">★★★★★</div>
+        <q>Excelente atendimento,  trabalho realizado com muita qualidade,  me forneceu várias dicas de como manter a bike em ordem. Muito satisfeito</q>
+        <div class="depo-author">
+          <div class="depo-avatar">👩</div>
+          <div>
+            <div class="depo-name">Camila Ferreira</div>
+            <div class="depo-sub">Cliente desde 2023</div>
+          </div>
+        </div>
+      </div>
+      <div class="depo fade fade-d2">
+        <div class="depo-stars">★★★★★</div>
+        <q>Como é satisfatório ver a dedicação do Doctor!!! Produtos de qualidade e estrutura TOP. Daniel é muito atencioso, poder ir sem medo!!!</q>
+        <div class="depo-author">
+          <div class="depo-avatar">🧔</div>
+          <div>
+            <div class="depo-name">Marcos Antônio</div>
+            <div class="depo-sub">Cliente desde 2021</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + CONTATO -->
+  <section class="faq-section" id="contato">
+    <div class="faq-grid">
+      <div>
+        <div class="section-label">Dúvidas frequentes</div>
+        <h2>Perguntas & respostas</h2>
+        <br><br>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Vocês atendem todas as marcas de bike? <span class="faq-chevron">+</span></div>
+          <div class="faq-a">Sim! Atendemos bikes nacionais e importadas de todas as marcas, incluindo Trek,
+            Specialized, Scott, Giant, Cannondale e muitas outras.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Preciso agendar ou posso chegar sem hora? <span class="faq-chevron">+</span></div>
+          <div class="faq-a">Recomendamos agendar pelo WhatsApp para garantir atendimento rápido. Mas chegadas sem hora
+            também são atendidas, conforme disponibilidade do dia.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Vocês oferecem garantia nos serviços? <span class="faq-chevron">+</span></div>
+          <div class="faq-a">Sim! Todos os serviços têm garantia. O prazo varia conforme o tipo de serviço e peça
+            utilizada, mas é sempre informado no orçamento.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Qual o prazo médio de entrega? <span class="faq-chevron">+</span></div>
+          <div class="faq-a">O prazo médio é de 24 a 48 horas para a maioria dos serviços. Serviços mais complexos
+            que precisam de peças específicas podem levar um pouco mais ou dependendo da demanda.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Vocês buscam e entregam a bike em casa? <span class="faq-chevron">+</span></div>
+          <div class="faq-a">Não entregamos.</div>
+        </div>
+      </div>
+      <div class="faq-side fade">
+        <div class="section-label">Contato direto</div>
+        <h3>Fale com a gente</h3>
+        <p>Prefere tirar sua dúvida diretamente com o Daniel? Entre em contato pelos canais abaixo. Respondemos rápido!
+        </p>
+        <div class="contact-info">
+          <div class="ci">
+            <span class="ci-icon">📍</span>
+            <div>
+              <span>Endereço</span>
+              <strong>Rua Silvia Jardim, 469 / Vianelo — Jundiaí, SP</strong>
+            </div>
+          </div>
+          <div class="ci">
+            <span class="ci-icon">📱</span>
+            <div>
+              <span>WhatsApp</span>
+              <strong>(11) 97652-7640</strong>
+            </div>
+          </div>
+          <div class="ci">
+            <span class="ci-icon">📸</span>
+            <div>
+              <span>Instagram</span>
+              <strong>@doctorbikes1</strong>
+            </div>
+          </div>
+          <div class="ci">
+            <span class="ci-icon">🕐</span>
+            <div>
+              <span>Horário</span>
+              <strong>Seg–Sáb: 8h às 18h</strong>
+            </div>
+          </div>
+        </div>
+        <br>
+        <a href="https://wa.me/5511976527640" class="btn-primary"
+          style="width:100%;justify-content:center;margin-top:8px;">
+          📱 Chamar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bikes-venda" id="loja">
+
+    <!-- Cabeçalho da seção -->
+    <div class="bv-header fade">
+      <div>
+        <div class="section-label">Loja</div>
+        <h2>Bikes à venda</h2>
+        <p class="bv-sub">Seminovas e novas, revisadas e com garantia. Todas passaram pela nossa oficina.</p>
+      </div>
+      <div class="bv-filtros">
+        <button class="filtro ativo" data-filtro="todos">Todas</button>
+        <button class="filtro" data-filtro="mtb">MTB</button>
+        <button class="filtro" data-filtro="speed">Speed</button>
+        <button class="filtro" data-filtro="urbana">Urbana</button>
+      </div>
+    </div>
+
+    <!-- Grade de bikes -->
+    <section>
+      <div class="bv-grid">
+
+        <!-- Card 1 -->
+        <div class="bv-card fade" data-categoria="mtb">
+          <div class="bv-circulo-wrap">
+            <div class="bv-circulo">
+              <div class="bv-arco"></div>
+              <div class="bv-emoji">
+                <img src="img/FuelEX98GXAXS_23_36953_B_Portrait.png" alt="Bike">
+              </div>
+              <div class="bv-badge-top">SEMINOVA</div>
+              <button class="bv-like" title="Favoritar">♡</button>
+            </div>
+            <div class="bv-specs-ring">
+              <span class="spec-dot" style="--ang:0deg" title="Carbono">C</span>
+              <span class="spec-dot" style="--ang:60deg" title="Shimano XT">S</span>
+              <span class="spec-dot" style="--ang:120deg" title="29&quot;">29</span>
+              <span class="spec-dot" style="--ang:240deg" title="Tubeless">T</span>
+              <span class="spec-dot" style="--ang:300deg" title="Freio Hidráulico">H</span>
+            </div>
+          </div>
+          <div class="bv-info">
+            <div class="bv-marca">Trek</div>
+            <h3 class="bv-nome">Fuel EX 9.8 GX</h3>
+            <div class="bv-tags">
+              <span>MTB Full</span><span>Tamanho M</span><span>2023</span>
+            </div>
+            <div class="bv-especificacoes">
+              <div class="bv-spec"><span>Quadro</span><strong>Carbono OCLV</strong></div>
+              <div class="bv-spec"><span>Câmbio</span><strong>SRAM GX Eagle 12v</strong></div>
+              <div class="bv-spec"><span>Suspensão</span><strong>Fox 36 140mm</strong></div>
+              <div class="bv-spec"><span>Rodas</span><strong>29" Tubeless</strong></div>
+            </div>
+            <div class="bv-preco-wrap">
+              <div>
+                <div class="bv-preco-de">De R$ 18.000</div>
+                <div class="bv-preco">R$ 14.500</div>
+              </div>
+              <a href="https://wa.me/5511976527640?text=Olá! Tenho interesse na Trek Fuel EX 9.8" class="bv-btn">
+                Tenho interesse →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 — Destaque -->
+        <div class="bv-card bv-destaque fade fade-d1" data-categoria="speed">
+          <div class="bv-label-destaque">⭐ Mais procurada</div>
+          <div class="bv-circulo-wrap">
+            <div class="bv-circulo">
+              <div class="bv-arco"></div>
+              <div class="bv-emoji">
+                <img src="img/FuelEX98GXAXS_23_36953_B_Portrait.png" alt="Bike">
+              </div>
+              <div class="bv-badge-top">NOVA</div>
+              <button class="bv-like" title="Favoritar">♡</button>
+            </div>
+            <div class="bv-specs-ring">
+              <span class="spec-dot" style="--ang:0deg" title="Carbono">C</span>
+              <span class="spec-dot" style="--ang:60deg" title="Shimano 105">Di2</span>
+              <span class="spec-dot" style="--ang:120deg" title="700c">700</span>
+              <span class="spec-dot" style="--ang:240deg" title="Tubeless">T</span>
+              <span class="spec-dot" style="--ang:300deg" title="Freio Hidráulico">H</span>
+            </div>
+          </div>
+          <div class="bv-info">
+            <div class="bv-marca">Specialized</div>
+            <h3 class="bv-nome">Tarmac SL7 Expert</h3>
+            <div class="bv-tags">
+              <span>Speed</span><span>Tamanho 56</span><span>2024</span>
+            </div>
+            <div class="bv-especificacoes">
+              <div class="bv-spec"><span>Quadro</span><strong>Carbono FACT 10r</strong></div>
+              <div class="bv-spec"><span>Câmbio</span><strong>Shimano 105 Di2 12v</strong></div>
+              <div class="bv-spec"><span>Rodas</span><strong>Roval Alpinist CLX</strong></div>
+              <div class="bv-spec"><span>Peso</span><strong>6,9 kg</strong></div>
+            </div>
+            <div class="bv-preco-wrap">
+              <div>
+                <div class="bv-preco-de">De R$ 32.000</div>
+                <div class="bv-preco">R$ 27.900</div>
+              </div>
+              <a href="https://wa.me/5511976527640?text=Olá! Tenho interesse na Specialized Tarmac SL7" class="bv-btn">
+                Tenho interesse →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bv-card fade fade-d2" data-categoria="urbana">
+          <div class="bv-circulo-wrap">
+            <div class="bv-circulo">
+              <div class="bv-arco"></div>
+              <div class="bv-emoji">
+                <img src="img/FuelEX98GXAXS_23_36953_B_Portrait.png" alt="Bike">
+              </div>
+              <div class="bv-badge-top">SEMINOVA</div>
+              <button class="bv-like" title="Favoritar">♡</button>
+            </div>
+            <div class="bv-specs-ring">
+              <span class="spec-dot" style="--ang:0deg" title="Alumínio">Al</span>
+              <span class="spec-dot" style="--ang:60deg" title="Shimano Deore">D</span>
+              <span class="spec-dot" style="--ang:120deg" title="700c">700</span>
+              <span class="spec-dot" style="--ang:240deg" title="Bagageiro">B</span>
+              <span class="spec-dot" style="--ang:300deg" title="Farol">L</span>
+            </div>
+          </div>
+          <div class="bv-info">
+            <div class="bv-marca">Giant</div>
+            <h3 class="bv-nome">Escape E+ 2 (E-Bike)</h3>
+            <div class="bv-tags">
+              <span>Urbana</span><span>Tamanho L</span><span>E-Bike</span>
+            </div>
+            <div class="bv-especificacoes">
+              <div class="bv-spec"><span>Quadro</span><strong>Alumínio ALUXX</strong></div>
+              <div class="bv-spec"><span>Motor</span><strong>SyncDrive Sport 250W</strong></div>
+              <div class="bv-spec"><span>Bateria</span><strong>500Wh (120km)</strong></div>
+              <div class="bv-spec"><span>Câmbio</span><strong>Shimano Deore 10v</strong></div>
+            </div>
+            <div class="bv-preco-wrap">
+              <div>
+                <div class="bv-preco-de">De R$ 16.000</div>
+                <div class="bv-preco">R$ 12.800</div>
+              </div>
+              <a href="https://wa.me/5511976527640?text=Olá! Tenho interesse na Giant Escape E+" class="bv-btn">
+                Tenho interesse →
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /bv-grid -->
+
+      <!-- Rodapé da seção -->
+      <div class="bv-footer fade">
+        <p>Estoque rotativo. Novas bikes toda semana. Entre em contato para ver o estoque completo.</p>
+        <a href="https://wa.me/5511976527640?text=Olá! Quero ver o estoque completo de bikes" class="btn-outline">
+          Ver estoque completo →
+        </a>
+      </div>
+
+    </section>
+
+    <!-- CTA FINAL -->
+    <div class="cta-final">
+      <h2>Pronto para agendar<br>sua revisão?</h2>
+      <p>Rua Silvia Jardim, 469 / Vianelo — Jundiaí, SP</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/5511976527640" target="_blank" rel="noopener noreferrer " class="cta-dark">📱 Chamar no WhatsApp</a>
+        <a href="https://www.instagram.com/doctorbikes81/" target="_blank" rel="noopener noreferrer "class="cta-white" >📸 Ver Instagram</a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">🔧</div>
+            Doctor <span>Bikes</span>
+          </div>
+          <p>Mecânica especializada em bikes nacionais e importadas em Jundiaí–SP. Diagnóstico preciso, peças de
+            qualidade e mão de obra especializada.</p>
+          <div class="socials">
+            <a class="social" href="#">📸</a>
+            <a class="social" href="#">💬</a>
+            <a class="social" href="#">🎵</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#">Revisão Completa</a></li>
+            <li><a href="#">Rolamentos</a></li>
+            <li><a href="#">Suspensão</a></li>
+            <li><a href="#">Rodas Tubeless</a></li>
+            <li><a href="#">Transmissão</a></li>
+            <li><a href="#">E-Bikes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Depoimentos</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Marcas</h4>
+          <ul>
+            <li><a href="#">Trek</a></li>
+            <li><a href="#">Specialized</a></li>
+            <li><a href="#">Scott</a></li>
+            <li><a href="#">Giant</a></li>
+            <li><a href="#">Shimano</a></li>
+            <li><a href="#">SRAM</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Doctor Bikes — Daniel Camargo</span>
+        <span>@doctorbikes1</span>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a class="wa-float" href="https://wa.me/5511976527640" title="WhatsApp">💬</a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
